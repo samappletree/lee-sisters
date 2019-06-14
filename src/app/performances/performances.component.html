@@ -1,0 +1,19 @@
+<div class="container-fluid mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{title | uppercase}}</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <ul class="performances">
+        <li *ngFor="let performance of performances">
+          <h6 class="p-md-2">{{performance.date}} - {{performance.title}}</h6>
+          <h6 class="pl-md-5 pb-3 pl-3"> {{performance.venue}}, {{performance.location}}</h6>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
