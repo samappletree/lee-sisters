@@ -8,7 +8,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 export class ShopComponent implements OnInit {
 
   constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/shirtCollage.png")');
+    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/shirtCollage.jpg")');
     this.renderer.setStyle(document.body, 'background-position', 'center');
   }
 
