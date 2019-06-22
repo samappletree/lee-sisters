@@ -9,10 +9,10 @@
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/6.2.0/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
-  <!-- <script defer src="/__/firebase/6.2.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.2.0/firebase-auth.js"></script>
   <script defer src="/__/firebase/6.2.0/firebase-database.js"></script>
   <script defer src="/__/firebase/6.2.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/6.2.0/firebase-storage.js"></script> -->
+  <script defer src="/__/firebase/6.2.0/firebase-storage.js"></script>
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
@@ -45,10 +45,10 @@
           try {
             let app = firebase.app();
             let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-            document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+            document.getElementById('load').text = `Firebase SDK loaded with ${features.join(', ')}`;
           } catch (e) {
             console.error(e);
-            document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+            document.getElementById('load').text = 'Error loading the Firebase SDK, check the console.';
           }
         });
       </script>

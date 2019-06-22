@@ -17,7 +17,7 @@ export class PerformancesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getPerformances();
+    // this.getPerformances();
   }
 
   getPerformances(): void {
