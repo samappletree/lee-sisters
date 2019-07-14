@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,12 +7,16 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/IMG_2283.JPG")');
-    this.renderer.setStyle(document.body, 'background-position', 'bottom');
+  constructor() {
+    
   }
 
   ngOnInit() {
+    document.body.classList.remove('performances-bg-img');
+    document.body.classList.remove('home-bg-img');
+    document.body.classList.remove('shop-bg-img');
+    document.body.classList.add('contact-bg-img');
+    document.body.classList.remove('videos-bg-img');
   }
 
 }

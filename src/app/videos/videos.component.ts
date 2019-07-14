@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-videos',
@@ -7,11 +7,15 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class VideosComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/IMG_5862.JPG")');
+  constructor() {
   }
 
   ngOnInit() {
+    document.body.classList.remove('performances-bg-img');
+    document.body.classList.remove('home-bg-img');
+    document.body.classList.remove('shop-bg-img');
+    document.body.classList.remove('contact-bg-img');
+    document.body.classList.add('videos-bg-img');
   }
 
 }

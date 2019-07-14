@@ -15,10 +15,28 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
-
+.home-bg-img {
+  background-image: url("./assets/IMG_2388.JPG");
+  background-position: center;
+}
+.performances-bg-img {
+  background-image: url("./assets/IMG_2295.JPG");
+  background-position: top; 
+}
+.shop-bg-img {
+  background-image: url("./assets/shirtCollage.jpg");
+  background-position: center; 
+}
+.videos-bg-img {
+  background-image: url("./assets/IMG_5862.JPG");
+  background-position: top; 
+}
+.contact-bg-img {
+  background-image: url("./assets/IMG_2283.JPG");
+  background-position: bottom; 
+}
 
 /*
   * Header

@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-shop',
@@ -7,12 +7,16 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/shirtCollage.jpg")');
-    this.renderer.setStyle(document.body, 'background-position', 'center');
+  constructor() {
+    
   }
 
   ngOnInit() {
+    document.body.classList.remove('performances-bg-img');
+    document.body.classList.remove('home-bg-img');
+    document.body.classList.add('shop-bg-img');
+    document.body.classList.remove('contact-bg-img');
+    document.body.classList.remove('videos-bg-img');
   }
 
 }

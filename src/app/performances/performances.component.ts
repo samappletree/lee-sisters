@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Performance } from '../performance';
 import { PerformanceService } from '../performance.service';
 
@@ -12,12 +12,16 @@ export class PerformancesComponent implements OnInit {
   performances: Performance[];
   title = 'Upcoming performances';
 
-  constructor(private renderer: Renderer2, private performanceService: PerformanceService) {
-    this.renderer.setStyle(document.body, 'background-image', 'url("./assets/IMG_2295.JPG")');
+  constructor(private performanceService: PerformanceService) {
   }
 
   ngOnInit() {
     // this.getPerformances();
+    document.body.classList.add('performances-bg-img');
+    document.body.classList.remove('home-bg-img');
+    document.body.classList.remove('shop-bg-img');
+    document.body.classList.remove('contact-bg-img');
+    document.body.classList.remove('videos-bg-img');
   }
 
   getPerformances(): void {
