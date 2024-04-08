@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/lee-sisters",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
