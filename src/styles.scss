@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+ * Globals
+ */
+
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-bg-img {
+  background-image: url("./assets/IMG_2388.JPG");
+  background-position: center;
+}
+.performances-bg-img {
+  background-image: url("./assets/IMG_2295.JPG");
+  background-position: top; 
+}
+.shop-bg-img {
+  background-image: url("./assets/shirtCollage.jpg");
+  background-position: center; 
+}
+.videos-bg-img {
+  background-image: url("./assets/IMG_5862.JPG");
+  background-position: top; 
+}
+.contact-bg-img {
+  background-image: url("./assets/IMG_2283.JPG");
+  background-position: bottom; 
+}
+
+/*
+  * Header
+  */
+
+.navbar {
+  margin-bottom: 2rem;
+
+  .active {
+    color: #fff;
+  }
+
+  .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+  }
+  .nav-link+.nav-link {
+    margin-left: 1rem;
+  }
+}
+
+.navbar-brand {
+  margin-bottom: 0;
+}
+
+
+.active {
+  color: #fff;
+}
+
+@media (min-width: 48em) {
+  .navbar-brand {
+    float: left;
+  }
+
+  .navbar {
+    float: right;
+  }
+}
