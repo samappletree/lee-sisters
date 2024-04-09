@@ -1,4 +1,4 @@
-# lee
+# lee sisters
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -44,3 +44,6 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Firebase Deploy
+To deploy using Firebase, first run npm run build to create a production build of the website. Once you have built the project, run firebase deploy to automatically deploy to your firebase project
