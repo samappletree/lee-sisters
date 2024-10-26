@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 600px;
 }
 
 .card {
