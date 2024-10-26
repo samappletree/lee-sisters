@@ -1,49 +1,29 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 <template>
   <div class="about section">
     <h2>From Rancho Cucamonga California,</h2>
     <h1> The Lee Sisters - Lise and Emi Lee!</h1>
     <img class="img-fluid" src="../assets/img/IMG_2407.JPG">
 
-    <p>Sisters in real life, the girls have been performing throughout California and Hawaii since 2015.</p>
-    <p>Their ukulele adventure took off in earnest in January 2015 when they were invited by Kanile&#39;a Ukulele
-      to play
-      at the NAMM show in Anaheim California, the world’s largest music convention. Since then, they&#39;ve been
-      invited
-      to perform at dozens of festivals and events throughout Southern California, including the Heritage of Aloha
-      Festival
-      in Santa Fe Springs California (where Lise was the winner of their 2015 ukulele competition). In Hawaii,
-      they have
-      performed as guests of Bryan Tolentino and Herb Ohta Jr. at the Kani Ka Pila Grille, the Moana Terrace at
-      Marriott
-      Waikiki as guests of Alan Akaka and the Keawe Ohana Show, and most recently at Disney’s Aulani Resort as
-      guests
-      of The Makaha Sons.</p>
-    <p>They are very proud to be sponsored by Kanile’a and Islander Ukulele, as Kanile’a featured artists, and
-      both play
-      Kanile’a premium tenor ukuleles.</p>
-    <p>Lise is currently attending the University of California, Riverside (UCR), majoring in business
-      administration. Emi
-      recently graduated from the University of California, San Diego (UCSD), where she majored in mechanical
-      engineering
-      and was also president and hula choreographer for the UCSD Hawaii Club. After graduation, Emi accepted an
-      internship
-      with Disney Imagineering in Orlando Florida, to pursue a career designing future Disney attractions. And
-      now, she
-      is now a full- time Disney Imagineer!</p>
-    <p>The Lee Sisters have recently completed recording two original ukulele pieces for a new EP released by
-      Sandwich Islands
-      Network (SIN) Radio entitled “California 808”, and are working towards completing their own original album
-      in the
-      coming year.
-    </p>
-    <p>Finally, you may also be surprised to learn that they have only been playing ukulele for 5 years......and
-      are self
-      taught!
-    </p>
-    <p>Check out their videos on their YouTube channel &quot;UkuLise&quot;, and their Facebook and Instagram pages
-      “The
-      Lee Sisters”(@ TheLeeSistersUkeDuo).</p>
+    <p>The Lee Sisters are proud to be sponsored by Ohana Ukuleles, Kanile’a, and Islander Ukulele.
+      Sisters in real life, Emi and Lise (LEE-SEE) have been performing throughout California and Hawaii since 2015.</p>
 
+    <p>The Lee Sisters’ debut EP album, “Uke Shoes,” is on all streaming platforms and available for purchase on this
+      website. (See the <RouterLink to="/store">Store</RouterLink>) They are also featured artists on Sandwich Islands Network Radio’s “California 808” and “Mele
+      Cali-Kimaka” albums.</p>
+    <p>They are currently composing a second full length instrumental ukulele album.</p>
+    <p>Their ukulele adventure took off in January 2015 when they were invited by Kanile'a Ukulele to play at the NAMM
+      show in Anaheim, CA. Since then, they have performed at dozens of festivals and events throughout Southern
+      California, including the Heritage of Aloha Festival (where Lise was the winner of the 2015 ukulele competition).
+      In Hawaii, they have performed as guests of Bryan Tolentino and Herb Ohta Jr., the Marriott Waikiki with Alan
+      Akaka and the Keawe Ohana Show, and Disney’s Aulani Resort with The Makaha Sons.</p>
+    <p>Emi holds a B.S. in Mechanical Engineering from the University of California, San Diego. Lise graduated with a
+      B.S. in Business Administration from the University of California, Riverside.</p>
+    <p>Check out their <a href="https://www.youtube.com/@UkuLise">YouTube channel "UkuLise"</a>, and their  <a href="https://www.facebook.com/TheLeeSistersUkeDuo/">Facebook</a> and <a href="https://www.instagram.com/theleesistersukeduo/">Instagram</a> pages “The Lee Sisters”
+      (@TheLeeSistersUkeDuo).</p>
+    <p>Fun Fact: The Lee Sisters are now based in San Diego, CA and work for the same company!</p>
   </div>
 </template>
 
@@ -60,5 +40,9 @@ h2 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+a {
+  color:rgba(255,244,229,.8);
 }
 </style>
